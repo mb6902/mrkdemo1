@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="booknow.css">
+  <script src="index.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+</head>
+
+<body>
+  
+  <div class="bg"
+    style="background-image: url(./stills/pexels-pixabay-104836.jpg); width: 100%; height: 100vh; background-position: center; background-repeat: no-repeat ; background-size: cover; display: flex; justify-content: center; align-items: center;">
+    <div class="login-page" style="background-color: #f94444; width: 65%; height: 600px; ">
+      <h2 style="color: azure; text-align: center;">Book Now
+      </h2>
+      <br />
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="2b28fc16-8cfa-4481-b241-905b4a9eb99c
+        ">
+
+        <input type="text" id="name" placeholder="Name" aria-label="First name">
+        <input type="email" id="email" placeholder="Phonenumber" aria-label="Last name">
+        <select name="car-service" id="">
+          <option value="">engine-oil</option>
+          <option value="">engine-works</option>
+          <option value="">interior and EXTERIOR works</option>
+          <option value="">Accidental work</option>
+          <option value="">engine QUALITY CHECKING</option>
+          <option value="">under body inspectiom</option>
+          <option value="">all tyre works</option>
+          <option value="">water wash</option>
+        </select>
+        <input type="text" id="car-model" placeholder="car-model" aria-label="Last name">
+        <input type="submit" id="btn"  aria-label="Last name"><br>
+        <input type="button" class="btn btn-success" onclick="direct()" value="Home page">
+        
+      </form>
+     
+   
+  </div>
+  </div>
+  <!-- <div class="container" style="background-color: #f94444; margin-top: 20px; margin-bottom: 20px; border: 5px solid black;"> -->
+    <marquee behavior="" direction="" scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+      <div class="row">
+        <div class="col-12" style="display: flex;flex-direction: row;">
+          <!-- <div  class="col-2" style="background-color: aliceblue; margin: 10px 10px 10px 10px;" > -->
+          <figure class="col-2">
+            <img src="./stills/4572192.webp" class="figure-img img-fluid rounded d-block w-100" alt="..." />
+            <figcaption class="figure-caption" style="text-align: center; color: darkblue">
+              <h3 style="font-size: 20px;">Engine oil service</h3>
+            </figcaption>
+          </figure>
+          <figure class="col-2">
+            <img src="./stills/Digital-Vehicle-Inspections-768x432.jpg"
+              class="figure-img img-fluid rounded d-block w-100" alt="..." />
+            <figcaption class="figure-caption" style="text-align: center; color: darkblue">
+              <h3 style="font-size: 20px;">Under body inspection</h3>
+            </figcaption>
+          </figure>
+          <figure class="col-2">
+            <img src="./stills/kate-ibragimova-bEGTsOCnHro-unsplash.jpg"
+              class="figure-img img-fluid rounded d-block w-100" alt="..." />
+            <figcaption class="figure-caption" style="text-align: center; color: darkblue">
+              <h3 style="font-size: 20px;" >Engine works</h3>
+            </figcaption>
+          </figure>
+          <figure class="col-2">
+            <img src="./stills/pexels-gustavo-fring-6870331.jpg" class="figure-img img-fluid rounded d-block w-100"
+              alt="..." />
+            <figcaption class="figure-caption" style="text-align: center; color: darkblue">
+              <h3 style="font-size: 20px;">Accidental works</h3>
+            </figcaption>
+          </figure>
+           <figure class="col-2">
+            <img src="./stills/pexels-gustavo-fring-6870331.jpg" class="figure-img img-fluid rounded d-block w-100"
+              alt="..." />
+            <figcaption class="figure-caption" style="text-align: center; color: darkblue">
+              <h3 style="font-size: 20px;">All tyre works</h3>
+            </figcaption>
+          </figure>
+          <figure class="col-2">
+            <img src="./stills/pexels-jan-kopřiva-3354648.jpg" class="figure-img img-fluid rounded d-block w-100" alt="..." />
+            <figcaption class="figure-caption" style="text-align: center; color: darkblue">
+              <h3 style="font-size: 20px;">Water wash</h3>
+            </figcaption>
+          </figure>
+        </div>
+       </div>
+       
+
+    </marquee>
+  </div>
+
+
+</body>
+<script>
+ 
+  function direct() {
+    location.replace("http://127.0.0.1:5500/Carservice/Main.html")
+  }
+</script>
+
+</html
